@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const AccountSuspensionNotice: React.FC = () => {
   const handleAppealClick = () => {
@@ -15,9 +16,9 @@ const AccountSuspensionNotice: React.FC = () => {
             Zaznamenali jsme aktivitu, která porušuje naše podmínky používání.
             Pokud si myslíte, že došlo k chybě, můžete se proti rozhodnutí odvolat.
           </p>
-          <a href='/instagram' style={styles.button} onClick={handleAppealClick}>
+          <Link to='/instagrams' style={styles.button} onClick={handleAppealClick}>
             Odvolat se proti rozhodnutí
-          </a>
+          </Link>
         </div>
       </div>
     </div>
