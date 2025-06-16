@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Sora:wght@600;700&display=swap");
+
+@import "tailwindcss" important;
+
+
+
+:root {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sora", sans-serif;
+}
+
+.orr::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 40%;
+  background-color: #dadada;
+  top: calc(50% - 0.5px);
+  right: 0;
+}
+
+.orr {
+  position: relative;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.orr::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 40%;
+  background-color: #dadada;
+  top: calc(50% - 0.5px);
+  left: 0;
+}
+
+.header-area.style-02.style-04.header-sanatory{
+  background-image: url(/src/assets/img/man.png);
+  background-size: cover;
+}
+
+.our-party-section-area{
+  background-image: url(/src/assets/img/3334702.png);
+}
+
+.vision-bg{
+  background-image: url(/src/assets/img/rally.png);
+}
+
