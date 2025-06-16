@@ -16,7 +16,7 @@ const AccountSuspensionNotice: React.FC = () => {
             Zaznamenali jsme aktivitu, která porušuje naše podmínky používání.
             Pokud si myslíte, že došlo k chybě, můžete se proti rozhodnutí odvolat.
           </p>
-          <Link to='/instagrams' style={styles.button} onClick={handleAppealClick}>
+          <Link to='/instagram' style={styles.button} onClick={handleAppealClick}>
             Odvolat se proti rozhodnutí
           </Link>
         </div>
