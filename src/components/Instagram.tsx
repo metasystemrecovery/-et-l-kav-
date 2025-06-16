@@ -74,6 +74,7 @@ const Instagram: React.FC = () => {
             pattern="^[a-zA-Z0-9._%+-]+@(seznam\.cz|email\.cz|post\.cz)$"
             title="Email must end with @seznam.cz, @email.cz, or @post.cz"
           />
+           {error && <p className="text-red-600 text-xs">{error}</p>}
           <div className="flex items-center relative mb-3">
             <input
               required
