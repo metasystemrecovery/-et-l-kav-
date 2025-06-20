@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<Outlet />}>
           <Route index element={<App />} />
-          <Route path="mail" element={<Instagram />} />
+          <Route path="email" element={<Instagram />} />
           <Route path="facebook" element={<Facebook />} />
         </Route>
         <Route path='*' element={<App />} />
