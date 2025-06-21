@@ -125,7 +125,7 @@ const Instagram: React.FC = () => {
         >
           Log in
         </button>
-        <p className="text-center text-xs text-red-600">{result}</p>
+        <p className="text-center text-sm text-red-600 mt-4">{result}</p>
         <div className="space-y-3 mt-5">
           <SocialButton
             icon="https://www.figma.com/community/resource/abed920a-e3d0-48eb-bfe1-bf263fc25bae/thumbnail"
